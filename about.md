@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Former D1 student - athelete, fascinated with the analytics space. M.S. Management Science(STEM), Analytics.
+Former D1 student - athelete, fascinated with the analytics space.n\ M.S. Management Science(STEM), Analytics.
 
 ### More Information
 
