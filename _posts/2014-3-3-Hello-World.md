@@ -1,10 +1,13 @@
 ---
 layout: post
-title: You're up and running!
+title: Welcome to my analytics space. 
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+## Current Project: Aug 2019 - Present
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+**Recepie Recommender System.**
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+Updating the [Recepie Recommender System project](alicjawil.github.io) from content-based recommendation system which was based on cosine similarity and algorithm was built based on what the user has liked in the past. This method has its drawbacks since we can only recommend based on the past reviews and stars given by particular user. 
+
+The goal of this project is to update to the collaborative filtering recommender where we will look at item-item collaborating filtering. This approach is very popular due to its efficiency and we are more likely to approach the cold star problem effectively - new users that join will be able to have an enhanced personalized experience quicker which can lead to users continuing to use the website.  
+
