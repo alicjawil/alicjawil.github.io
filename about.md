@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Former D1 student - athelete, fascinated with the analytics space. Open to full-time data scientist/data analyst/product analyst positions.
+Former D1 student - athelete, fascinated with the analytics space. Open to full-time data scientist/data analyst/product analyst positions. [Let's connect on LinkedIn!](https://www.linkedin.com/in/alicja-wilk-9b4baa92/)
 
 M.S. Management Science(STEM), _Business Analytics_.
 Focus: Advanced Machine Learning, Marketing Analytics and Predictive Analytics.
