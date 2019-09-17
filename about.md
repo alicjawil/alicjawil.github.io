@@ -26,4 +26,4 @@ Namaste.
 
 ## Contact me
 
-[alicjaw@uci.edu] (mailto:email@domain.com)
+[alicjaw@uci.edu](mailto:email@domain.com)
