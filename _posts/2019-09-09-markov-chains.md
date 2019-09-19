@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Markov Chain 
+title: Markov Chains and Text Mining 
 ---
 
 ## **Markov Chains applied on Reddit subreddits**
