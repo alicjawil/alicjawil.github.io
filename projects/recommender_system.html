@@ -13123,7 +13123,34 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Data-Preparation-and-Exploration">Data Preparation and Exploration<a class="anchor-link" href="#Data-Preparation-and-Exploration">&#182;</a></h1>
+<h1 id="Table-of-contents">Table of contents<a class="anchor-link" href="#Table-of-contents">&#182;</a></h1><ol>
+<li><a href="#Introduction">Data Preparation and Exploration</a></li>
+<li><a href="#features">Feature Engineering</a></li>
+<li><a href="#vectors">Vectorizing Ingridients</a></li>
+<li><a href="#bagcluster">Bag of Words and Clustering</a></li>
+<li><a href="#stem">Stemming</a></li>
+<li><a href="#fr">Feature Reduction</a></li>
+<li><a href="#ml">Machine Learning</a><ul>
+<li><a href="#mnb">MNB</a></li>
+<li><a href="#dt1">Decision Tree with Custom Vector *best model</a></li>
+<li><a href="#dt2">Decision Tree with Word2Vec</a></li>
+<li><a href="#bagging">Bagging</a></li>
+<li><a href="#sgb">Stochastic GB</a></li>
+<li><a href="#rf">Random Forrest</a></li>
+<li><a href="#lr">Logistic Regression</a></li>
+<li><a href="#em">Ensemble - Voting Classifier</a></li>
+</ul>
+</li>
+<li><a href="#concl">Conclusion</a></li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Data-Preparation-and-Exploration-">Data Preparation and Exploration <a class="anchor" id="Introduction" /><a class="anchor-link" href="#Data-Preparation-and-Exploration-">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13817,7 +13844,14 @@ Average # of recipes rated by users in training:  4.269739317278455
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Feature-Engineering-(continued)">Feature Engineering (continued)<a class="anchor-link" href="#Feature-Engineering-(continued)">&#182;</a></h1><p>II.  Ingredients</p>
+<h2 id="Feature-Engineering-">Feature Engineering <a class="anchor" id="features" /><a class="anchor-link" href="#Feature-Engineering-">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ingredients</p>
 <ul>
 <li>Begin by identifying key singular ingredients, in the ingredients column, that are two words and combine the words with a hyphen. For example, "olive oil" will be converted to "olive-oil." </li>
 </ul>
@@ -14047,7 +14081,7 @@ Average # of recipes rated by users in training:  4.269739317278455
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Feature-Engineering-(continued)">Feature Engineering (continued)<a class="anchor-link" href="#Feature-Engineering-(continued)">&#182;</a></h1><p>III.  Adding lengths of ingredients and of directions to receipe dataframe</p>
+<h2 id="Feature-Engineering-(continued)">Feature Engineering (continued)<a class="anchor-link" href="#Feature-Engineering-(continued)">&#182;</a></h2><p>Adding lengths of ingredients and of directions to receipe dataframe</p>
 
 </div>
 </div>
@@ -14403,7 +14437,7 @@ Name: ingredients, dtype: object
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Vectorizing-Ingredients">Vectorizing Ingredients<a class="anchor-link" href="#Vectorizing-Ingredients">&#182;</a></h1><ul>
+<h2 id="Vectorizing-Ingredients-">Vectorizing Ingredients <a class="anchor" id="vectors" /><a class="anchor-link" href="#Vectorizing-Ingredients-">&#182;</a></h2><ul>
 <li>Using TfidfVectorizer to determine least valuable words to add those to the English stop words before using CountVectorizer and comparing unigram, bigram and combined (unigram &amp; bigram) vectors</li>
 </ul>
 
@@ -14543,7 +14577,7 @@ Sample of stop words:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Bag-of-Words--and-Cluster-Processing">Bag of Words  and Cluster Processing<a class="anchor-link" href="#Bag-of-Words--and-Cluster-Processing">&#182;</a></h1><ul>
+<h2 id="Bag-of-Words--and-Clustering-">Bag of Words  and Clustering <a class="anchor" id="bagcluster" /><a class="anchor-link" href="#Bag-of-Words--and-Clustering-">&#182;</a></h2><ul>
 <li>We created vectors using CountVectorizer and explored unigram, bigrams and combined before settling on the combined.  </li>
 <li>After that, we also stemmed the ingredients before generating a stemmed version of CountVectorizer that we use to generate kMeans clusters after running elbow chart to determine optimal # of clusters</li>
 </ul>
@@ -14789,7 +14823,7 @@ Cluster 6: shredded cheddar shredded cheddar beef sour bell cooked large tomatoe
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Stemming">Stemming<a class="anchor-link" href="#Stemming">&#182;</a></h3><ul>
+<h2 id="Stemming-">Stemming <a class="anchor" id="stem" /><a class="anchor-link" href="#Stemming-">&#182;</a></h2><ul>
 <li>Stemmed tokenized words using PorterStemmer to find the roots of each word in ingredients</li>
 <li>Updated the count vectorizer to use the custom stemmed tokenizer function</li>
 </ul>
@@ -14866,7 +14900,7 @@ Number of Attribute Words (Stemmed): 88195
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Feature-Reduction-#1:--SVD-of-CountVectorized-stemmed-vectors">Feature Reduction #1:  SVD of CountVectorized stemmed vectors<a class="anchor-link" href="#Feature-Reduction-#1:--SVD-of-CountVectorized-stemmed-vectors">&#182;</a></h1><ul>
+<h2 id="Feature-Reduction-">Feature Reduction <a class="anchor" id="fr" /><a class="anchor-link" href="#Feature-Reduction-">&#182;</a></h2><h3 id="svd-of-cv">svd of cv<a class="anchor-link" href="#svd-of-cv">&#182;</a></h3><ul>
 <li>Used SVD to reduce CountVectorizer stemmed sparse features from over 500k to 300 to use with modeling</li>
 </ul>
 
@@ -14917,7 +14951,7 @@ Reduced shape: (45630, 300)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Feature-Reduction-#-2:-word2vec">Feature Reduction # 2: word2vec<a class="anchor-link" href="#Feature-Reduction-#-2:-word2vec">&#182;</a></h1><ul>
+<h3 id="word2vec">word2vec<a class="anchor-link" href="#word2vec">&#182;</a></h3><ul>
 <li>We generate tokens of words from ingredients in the train and test splits and for the full ingredients list of the recipe dataframe</li>
 <li>The full tokens are used to generate word vectors which are used to generate vector representations for the train, test and full recipe dataframes.</li>
 </ul>
@@ -15064,14 +15098,15 @@ Reduced shape: (45630, 300)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Machine-Learning-Models">Machine Learning Models<a class="anchor-link" href="#Machine-Learning-Models">&#182;</a></h2>
+<h2 id="Machine-Learning-Models-">Machine Learning Models <a class="anchor" id="ml" /><a class="anchor-link" href="#Machine-Learning-Models-">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Linear-Regression">Linear Regression<a class="anchor-link" href="#Linear-Regression">&#182;</a></h3>
+<h3 id="Linear-Regression">Linear Regression<a class="anchor-link" href="#Linear-Regression">&#182;</a></h3><p>Very worst model but it was interesting to give it a try.</p>
+
 </div>
 </div>
 </div>
@@ -15261,7 +15296,7 @@ Mean Absolute Deviation 0.28
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="MultinominalNB">MultinominalNB<a class="anchor-link" href="#MultinominalNB">&#182;</a></h3>
+<h3 id="MultinominalNB-">MultinominalNB <a class="anchor" id="mnb" /><a class="anchor-link" href="#MultinominalNB-">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -15408,10 +15443,10 @@ Predicted Ratings--&gt;
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Decision-Tree-Classifier-with-Custom-Features-Vector"><strong>Decision Tree Classifier with Custom Features Vector</strong><a class="anchor-link" href="#Decision-Tree-Classifier-with-Custom-Features-Vector">&#182;</a></h3><p>Because our models were not doing very well, we decided to create a custom feature vector to use that would incorporate our custom features regarding the length of ingredients, directions, the preparation times, and the cluster which would factor in the stemmed count vectorizers.  This was our most accurate model and the one we submitted to Kaggle.</p>
+<h3 id="Decision-Tree-Classifier-with-Custom-Features-Vector-"><strong>Decision Tree Classifier with Custom Features Vector</strong> <a class="anchor" id="dt1" /><a class="anchor-link" href="#Decision-Tree-Classifier-with-Custom-Features-Vector-">&#182;</a></h3><p>Because our models were not doing very well, we decided to create a custom feature vector to use that would incorporate our custom features regarding the length of ingredients, directions, the preparation times, and the cluster which would factor in the stemmed count vectorizers.  This was our most accurate model and the one we submitted to Kaggle.</p>
 
-<pre><code>- Accuracy = 80.8%
-- MAD = .22
+<pre><code>- Accuracy = 83%
+- MAD = .19
 - Predicted one 2, and all the rest 3's, 4's, and 5's
 
 </code></pre>
@@ -15715,7 +15750,7 @@ No handles with labels found to put in legend.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Decision-Tree-using-word2vec">Decision Tree using word2vec<a class="anchor-link" href="#Decision-Tree-using-word2vec">&#182;</a></h3>
+<h2 id="Decision-Tree-using-word2vec-">Decision Tree using word2vec <a class="anchor" id="dt2" /><a class="anchor-link" href="#Decision-Tree-using-word2vec-">&#182;</a></h2>
 <pre><code>- Accuracy = 70%
 - MAD = .31
 - Better distribution of predictions, more #'s but worse accuracy
@@ -15857,7 +15892,7 @@ Predicted Ratings--&gt;
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Bagging">Bagging<a class="anchor-link" href="#Bagging">&#182;</a></h2>
+<h2 id="Bagging-">Bagging <a class="anchor" id="bagging" /><a class="anchor-link" href="#Bagging-">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -15908,7 +15943,7 @@ SG Boosting improved accuracy to 72%</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Stochastic-Gradient-Boosting">Stochastic Gradient Boosting<a class="anchor-link" href="#Stochastic-Gradient-Boosting">&#182;</a></h2>
+<h2 id="Stochastic-Gradient-Boosting-">Stochastic Gradient Boosting <a class="anchor" id="sgb" /><a class="anchor-link" href="#Stochastic-Gradient-Boosting-">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -15960,7 +15995,7 @@ Test set MAD: 0.30
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Random-Forest-(based-on-DT-using-w2v)">Random Forest (based on DT using w2v)<a class="anchor-link" href="#Random-Forest-(based-on-DT-using-w2v)">&#182;</a></h3>
+<h2 id="Random-Forest-">Random Forest <a class="anchor" id="rf" /><a class="anchor-link" href="#Random-Forest-">&#182;</a></h2>
 <pre><code>- Accuracy = 71%
 - MAD = .3
 
@@ -16109,7 +16144,7 @@ No handles with labels found to put in legend.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Logistic-Regression-using-SVD">Logistic Regression using SVD<a class="anchor-link" href="#Logistic-Regression-using-SVD">&#182;</a></h3>
+<h2 id="Logistic-Regression-using-SVD-">Logistic Regression using SVD <a class="anchor" id="lr" /><a class="anchor-link" href="#Logistic-Regression-using-SVD-">&#182;</a></h2>
 <pre><code>- Accuracy = 70%
 - MAD = .32</code></pre>
 
@@ -16220,7 +16255,7 @@ Predicted Ratings--&gt;
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Ensemble-Model-using-w2v-and-SVD----Voting-Classifier-:">Ensemble Model using w2v and SVD -  Voting Classifier :<a class="anchor-link" href="#Ensemble-Model-using-w2v-and-SVD----Voting-Classifier-:">&#182;</a></h2><ul>
+<h2 id="Ensemble-Model-using-w2v-and-SVD----Voting-Classifier-:-">Ensemble Model using w2v and SVD -  Voting Classifier : <a class="anchor" id="em" /><a class="anchor-link" href="#Ensemble-Model-using-w2v-and-SVD----Voting-Classifier-:-">&#182;</a></h2><ul>
 <li>LOGISTICS REGRESSION </li>
 <li><p>DECISION TREE</p>
 <ul>
@@ -16604,18 +16639,20 @@ Decision Tree : 0.703
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Conclusion-">Conclusion <a class="anchor" id="concl" /><a class="anchor-link" href="#Conclusion-">&#182;</a></h2><h3 id="To-be-improved!-:">To be improved! :<a class="anchor-link" href="#To-be-improved!-:">&#182;</a></h3><p>The purpose here was mostly to explore different techniques and different models. Future work on the project will include but not be limited to:</p>
+<ul>
+<li>improving accuracy</li>
+<li>more features</li>
+<li>perform grid search on parameters</li>
+<li>creating item-item recommendation system </li>
+<li>automate</li>
+</ul>
 
-    </div>
 </div>
 </div>
-
 </div>
     </div>
   </div>
