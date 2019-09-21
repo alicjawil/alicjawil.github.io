@@ -511,15 +511,28 @@ ggplot(geofence, aes(x= distance, colour=distance_group)) + geom_density()</code
 <h3>Insights and Implications</h3>
 <ul>
 <li>Standard deviation around mean is similar for all variables in gf.model,</li>
-<li>Looking at histograms of gf.model we can see that :  App review val. Is highest at about 3.5  Cat_social has lowest click rate among “entertainment, social, tech categories”  Distance is slightly skewed to the right</li>
-<li>Correlation Model is delivered :  Strongest negative correlations between: o App_rev_val and cat_tech o Cat_entertainment and cat tech o Os_ios and cat_tech  Strongest positive correlation between: o Cat_entertainment and app rev val</li>
-<li>CTR for overall data set is heavily on did not click side,  Ctr = .0068</li>
-<li>CTR binned (7)  CTR is highest for closest distance and lower for longer distance o People might spend slightly more time when they are closer since they might have more options to choose from and get distracted easier since distance is not a deciding factor anymore. Important to know for business that by geofencing and strip centers they actually might gain competitive advantage versus if they separate from other similar stores. Consumers might be more likely to pick your location since there are more choices at first glance. (especially “I don’t know what I want” customers)</li>
-<li>Operating System vs CTR  When comparing operating systems people who have iPhones have lower click through rate than Android users. Like mentioned in class, it could be due to lower income class knowing which fast food places to visit and making quicker choice vs. iPhone users might eat less in fast food places in general.</li>
+<li>Looking at histograms of gf.model we can see that : App review val. is the highest: 3.5</li>
+<li>Cat_social has lowest click rate among “entertainment, social, tech categories”</li>
+</ul>
+<p>Distance is slightly skewed to the right - Correlation Model is delivered : -Strongest negative correlations between: -App_rev_val and cat_tech -Cat_entertainment and cat tech -Os_ios and cat_tech -Strongest positive correlation between: - Cat_entertainment and app rev val - CTR for overall data set is heavily on did not click side, - Ctr = .0068 - CTR binned (7) - CTR is highest for closest distance and lower for longer distance</p>
+<p>People might spend slightly more time when they are closer since they might have more options to choose from and get distracted easier since distance is not a deciding factor anymore. Important to know for business that by geofencing and strip centers they actually might gain competitive advantage versus if they separate from other similar stores. Consumers might be more likely to pick your location since there are more choices at first glance. (especially “I don’t know what I want” customers)</p>
+<ul>
+<li>Operating System vs CTR</li>
+</ul>
+<p>When comparing operating systems people who have iPhones have lower click through rate than Android users. Like mentioned in class, it could be due to lower income class knowing which fast food places to visit and making quicker choice vs. iPhone users might eat less in fast food places in general.</p>
+<ul>
 <li>Highest density in closer distances</li>
 </ul>
-<p><strong>Logistic Regression, Model1:</strong> Given 5% level of significance, significant variables are: Distance; p-vaule .008888 Distance_Squared; p-value:.035853 Imp_Large; p-value: .000125 Cat_Tech:pvalue: 9.61e-05 os_iOS. P-value: .002259</p>
-<p>At 5 % level of significance : - Every 1 km increase in distance decreases didclick by -.118 - Every 1 km2 increase in distance increases didclick by .009 - If imp_size = large , didclick decreases by .352 - If app_topcat = tech, didclick increases by .688 - If os = iOS , didclick increases by .386</p>
+<p><strong>Logistic Regression, Model1:</strong></p>
+<p>Given 5% level of significance, significant variables are: - Distance; p-vaule .008888 - Distance_Squared; p-value:.035853 - Imp_Large; p-value: .000125 - Cat_Tech:pvalue: 9.61e-05 - os_iOS. P-value: .002259</p>
+<p>At 5 % level of significance :</p>
+<ul>
+<li>Every 1 km increase in distance decreases didclick by -.118</li>
+<li>Every 1 km2 increase in distance increases didclick by .009</li>
+<li>If imp_size = large , didclick decreases by .352</li>
+<li>If app_topcat = tech, didclick increases by .688</li>
+<li>If os = iOS , didclick increases by .386</li>
+</ul>
 <p>Interestingly, star rating is not significant in this study. This could be due to overall lower raiting of fast foods and people usually know the names of those places and in this case rating is not their concern.</p>
 </div>
 </div>
