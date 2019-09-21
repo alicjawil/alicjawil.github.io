@@ -9,7 +9,7 @@ permalink: /projects/
 * [Recipie Recommender System](/projects/recommender_system.html)
 * [Indeed Resume Web Scraping](/projects/indeed_resume_scrape.html)
 * [Markov Chains and NLP on Reddit Subreddits](/projects/reddit_markov_chain.html)
-* [Geo-fencing Mobile Analytics](/projects/Mobile_Analytics.html)
+* [Mobile Marketing Analytics](/projects/Mobile_Analytics.html)
 
 
 
