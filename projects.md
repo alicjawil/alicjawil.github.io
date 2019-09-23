@@ -12,7 +12,7 @@ permalink: /projects/
 * Spotify _hit no-hit_ classification
   - [Scraping data and features from Spotify API](/projects/spotify-scrape.html)
   - [Data Visualization](/projects/spotify_datavis.html)
-  - [Machine Learning Models: Logistic Regression, Gaussian Naive Bayes, Decision Trees, Random Forest](/project/spotify_models.html)
+  - [Machine Learning Models: Logistic Regression, Gaussian Naive Bayes, Decision Trees, Random Forest](/projects/spotify_models.html)
 * [Mobile Marketing Analytics](/projects/Mobile_Analytics.html)
 * [Freemium Subscriber Model Analysis: Propensity Score Matching and Regression Analysis](/projects/tbd.html)
 
