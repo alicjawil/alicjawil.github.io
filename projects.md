@@ -10,7 +10,7 @@ permalink: /projects/
 * [Indeed Resume Web Scraping](/projects/indeed_resume_scrape.html)
 * [Markov Chains and NLP on Reddit Subreddits](/projects/reddit_markov_chain.html)
 * Spotify _hit no-hit_ classification
-  - [Scraping data from Spotify API](/projects/spotify_scrape.html)
+  - [Scraping data and features from Spotify API](/projects/spotify_scrape.html)
 * [Mobile Marketing Analytics](/projects/Mobile_Analytics.html)
 * [Freemium Subscriber Model Analysis: Propensity Score Matching and Regression Analysis](/projects/tbd.html)
 
