@@ -11,6 +11,7 @@ permalink: /projects/
 * [Markov Chains and NLP on Reddit Subreddits](/projects/reddit_markov_chain.html)
 * Spotify _hit no-hit_ classification
   - [Scraping data and features from Spotify API](/projects/spotify-scrape.html)
+  - [Data Visualization](/projects/spotify_datavis.html)
 * [Mobile Marketing Analytics](/projects/Mobile_Analytics.html)
 * [Freemium Subscriber Model Analysis: Propensity Score Matching and Regression Analysis](/projects/tbd.html)
 
