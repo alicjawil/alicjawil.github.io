@@ -207,8 +207,12 @@ $(document).ready(function () {
 
 <div id="data-visualization---spotify-prediction" class="section level2">
 <h2>Data Visualization - Spotify prediction</h2>
-<pre><code>## Warning: package 'dplyr' was built under R version 3.5.2</code></pre>
-<pre><code>## Warning: package 'ggplot2' was built under R version 3.5.2</code></pre>
+<pre class="r"><code>library(dplyr)
+library(car)
+library(corrplot)
+library(gridExtra)
+library(ggExtra)
+library(ggplot2)</code></pre>
 <div id="dataset" class="section level3">
 <h3>Dataset</h3>
 <pre class="r"><code>head(df)</code></pre>
