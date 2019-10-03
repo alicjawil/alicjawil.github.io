@@ -10,7 +10,7 @@ permalink: /projects/
 * [Recipie Recommender System](/projects/recommender_system.html)
 * [Indeed Resume Web Scraping](/projects/indeed_resume_scrape.html)
 * [Markov Chains and NLP on Reddit Subreddits](/projects/reddit_markov_chain.html)
-* [Simple XGBoost model + serializing the model with Pickle](/projects/XGboost-ex.html)
+* [Simple XGBoost model + serializing the model with Pickle](/projects/XGBoost-ex.html)
 * Spotify _hit no-hit_ classification
   - [Scraping data and features from Spotify API](/projects/spotify-scrape.html)
   - [Data Visualization](/projects/spotify_datavis.html)
