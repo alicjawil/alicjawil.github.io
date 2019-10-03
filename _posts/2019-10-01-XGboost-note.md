@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exploring XGBoost 
+title: Exploring XGBoost
 ---
 
 ## **XGBoost simple example.**
