@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-### Analytics Projects
+### Projects
 
 
 * [Recipie Recommender System](/projects/recommender_system.html)
