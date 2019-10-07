@@ -11,4 +11,4 @@ XGBoost is powerful, flexible and efficient. It provides a parallel tree boostin
 
 Gradient boosting is founded on gradient descent ideology to be able to best optimize the cost function. 
 
-Take a look at my example in Python [here](https://alicjawil.github.io/projects/XGboost-ex.html)
+Take a look at my example in Python [here](https://alicjawil.github.io/projects/XGBoost-ex.html)
