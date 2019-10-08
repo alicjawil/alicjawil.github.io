@@ -11,7 +11,7 @@ permalink: /projects/
 * [Indeed Resume Web Scraping](/projects/indeed_resume_scrape.html)
 * [Markov Chains and NLP on Reddit Subreddits](/projects/reddit_markov_chain.html)
 * [Simple XGBoost model + serializing the model with Pickle](/projects/XGBoost-ex.html)
-* Spotify _hit no-hit_ classification
+* Spotify Project
   - [Scraping data and features from Spotify API](/projects/spotify-scrape.html)
   - [Data Visualization](/projects/spotify_datavis.html)
   - [Machine Learning Models: Logistic Regression, Gaussian Naive Bayes, Decision Trees, Random Forest](/projects/spotify_models.html)
