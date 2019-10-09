@@ -5,3 +5,5 @@ permalink: /resources/
 ---
 
 ### Resources
+
+[T - SQL Intermediate Tutorial](/resources/
