@@ -6,4 +6,4 @@ permalink: /resources/
 
 ### Resources
 
-[T - SQL Intermediate Tutorial](/resources/IntermediateSQLserver.html)
+[T - SQL Intermediate Tutorial](/resources/IntermediateSQLserver.md)
