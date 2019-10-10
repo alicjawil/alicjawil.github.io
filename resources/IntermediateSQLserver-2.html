@@ -13254,7 +13254,8 @@ Filter to only return missing values from IncidentState</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Replace-missing-values">Replace missing values<a class="anchor-link" href="#Replace-missing-values">&#182;</a></h1><p><strong>SELECT</strong> Country, COALESCE(Country, IncidentState, City) <strong>AS</strong> Location</p>
+<p>Replace missing values</p>
+<p><strong>SELECT</strong> Country, COALESCE(Country, IncidentState, City) <strong>AS</strong> Location</p>
 <p><strong>FROM</strong> Incidents</p>
 <p><strong>WHERE</strong> Country IS NULL</p>
 
@@ -13310,7 +13311,8 @@ Filter to only return missing values from IncidentState</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Write-a-T-SQL-query-which-will-return-the-sum-of-the-Quantity-column-as-Total-for-each-type-of-MixDesc.">Write a T-SQL query which will return the sum of the Quantity column as Total for each type of MixDesc.<a class="anchor-link" href="#Write-a-T-SQL-query-which-will-return-the-sum-of-the-Quantity-column-as-Total-for-each-type-of-MixDesc.">&#182;</a></h1><p><strong>SELECT SUM</strong>(Quantity) as Total, MixDesc</p>
+<p>Write a T-SQL query which will return the sum of the Quantity column as Total for each type of MixDesc.</p>
+<p><strong>SELECT SUM</strong>(Quantity) as Total, MixDesc</p>
 <p><strong>FROM</strong> shipments</p>
 <p><strong>Group by</strong> MixDesc</p>
 
@@ -13320,7 +13322,9 @@ Filter to only return missing values from IncidentState</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Create-a-query-that-returns-the-number-of-rows-for-each-type-of-MixDesc.">Create a query that returns the number of rows for each type of MixDesc.<a class="anchor-link" href="#Create-a-query-that-returns-the-number-of-rows-for-each-type-of-MixDesc.">&#182;</a></h1><h1 id="Count-the-number-of-rows-by-MixDesc">Count the number of rows by MixDesc<a class="anchor-link" href="#Count-the-number-of-rows-by-MixDesc">&#182;</a></h1><p><strong>SELECT</strong> MixDesc, COUNT(*)</p>
+<p>Create a query that returns the number of rows for each type of MixDesc.
+Count the number of rows by MixDesc</p>
+<p><strong>SELECT</strong> MixDesc, COUNT(*)</p>
 <p><strong>FROM</strong> Shipments</p>
 <p><strong>GROUP BY</strong> MixDesc</p>
 
@@ -13341,7 +13345,8 @@ Filter to only return missing values from IncidentState</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Return-the-difference-in-OrderDate-and-ShipDate">Return the difference in OrderDate and ShipDate<a class="anchor-link" href="#Return-the-difference-in-OrderDate-and-ShipDate">&#182;</a></h1><p><strong>SELECT</strong> OrderDate, ShipDate,</p>
+<p>Return the difference in OrderDate and ShipDate</p>
+<p><strong>SELECT</strong> OrderDate, ShipDate,</p>
 
 <pre><code>DATEDIFF(DD, OrderDate, ShipDate) AS Duration
 
@@ -13354,7 +13359,8 @@ Filter to only return missing values from IncidentState</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Return-the-DeliveryDate-as-5-days-after-the-ShipDate">Return the DeliveryDate as 5 days after the ShipDate<a class="anchor-link" href="#Return-the-DeliveryDate-as-5-days-after-the-ShipDate">&#182;</a></h1><p><strong>SELECT</strong> OrderDate,</p>
+<p>Return the DeliveryDate as 5 days after the ShipDate</p>
+<p><strong>SELECT</strong> OrderDate,</p>
 
 <pre><code>DATEADD(DD, 5, ShipDate) AS DeliveryDate
 
@@ -13382,7 +13388,8 @@ Filter to only return missing values from IncidentState</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Round-Cost-to-the-nearest-dollar">Round Cost to the nearest dollar<a class="anchor-link" href="#Round-Cost-to-the-nearest-dollar">&#182;</a></h1><p>SELECT Cost,</p>
+<p>Round Cost to the nearest dollar</p>
+<p>SELECT Cost,</p>
 
 <pre><code>ROUND(Cost, 0) AS RoundedCost
 
@@ -13395,7 +13402,8 @@ Filter to only return missing values from IncidentState</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Truncate-cost-to-whole-number">Truncate cost to whole number<a class="anchor-link" href="#Truncate-cost-to-whole-number">&#182;</a></h1><p>SELECT Cost,</p>
+<p>Truncate cost to whole number</p>
+<p>SELECT Cost,</p>
 
 <pre><code>ROUND(Cost, 0,1) AS TruncateCost
 
@@ -13408,7 +13416,8 @@ Filter to only return missing values from IncidentState</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Return-the-absolute-value-of-DeliveryWeight">Return the absolute value of DeliveryWeight<a class="anchor-link" href="#Return-the-absolute-value-of-DeliveryWeight">&#182;</a></h1><p>SELECT DeliveryWeight,</p>
+<p>Return the absolute value of DeliveryWeight</p>
+<p>SELECT DeliveryWeight,</p>
 
 <pre><code>ABS(DeliveryWeight) AS AbsoluteValue
 
@@ -13421,7 +13430,8 @@ Filter to only return missing values from IncidentState</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Return-the-square-and-square-root-of-WeightValue">Return the square and square root of WeightValue<a class="anchor-link" href="#Return-the-square-and-square-root-of-WeightValue">&#182;</a></h1><p><strong>SELECT</strong> WeightValue,</p>
+<p>Return the square and square root of WeightValue</p>
+<p><strong>SELECT</strong> WeightValue,</p>
 
 <pre><code>SQUARE(WeightValue) AS WeightSquare, 
 
@@ -13447,7 +13457,10 @@ SQRT(WeightValue) AS WeightSqrt
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Declare-the-variable-(a-SQL-Command,-the-var-name,-the-datatype)">Declare the variable (a SQL Command, the var name, the datatype)<a class="anchor-link" href="#Declare-the-variable-(a-SQL-Command,-the-var-name,-the-datatype)">&#182;</a></h1><h1 id="Set-the-counter-to-20">Set the counter to 20<a class="anchor-link" href="#Set-the-counter-to-20">&#182;</a></h1><h1 id="Select-and-increment-the-counter-by-one">Select and increment the counter by one<a class="anchor-link" href="#Select-and-increment-the-counter-by-one">&#182;</a></h1><p><strong>DECLARE</strong> @counter INT</p>
+<p>Declare the variable (a SQL Command, the var name, the datatype)
+Set the counter to 20
+Select and increment the counter by one</p>
+<p><strong>DECLARE</strong> @counter INT</p>
 
 <pre><code>SET @counter = 20
 
@@ -13473,7 +13486,8 @@ SELECT @counter = @counter +1
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Write-a-WHILE-loop-that-increments-counter-by-1-until-counter-is-less-than-30.">Write a WHILE loop that increments counter by 1 until counter is less than 30.<a class="anchor-link" href="#Write-a-WHILE-loop-that-increments-counter-by-1-until-counter-is-less-than-30.">&#182;</a></h1><p>DECLARE @counter INT</p>
+<p>Write a WHILE loop that increments counter by 1 until counter is less than 30.</p>
+<p>DECLARE @counter INT</p>
 <p>SET @counter = 20</p>
 <p>WHILE @counter &lt; 30</p>
 <p>BEGIN</p>
@@ -13499,7 +13513,9 @@ SELECT @counter = @counter +1
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Return-MaxGlucose-from-the-derived-table.">Return MaxGlucose from the derived table.<a class="anchor-link" href="#Return-MaxGlucose-from-the-derived-table.">&#182;</a></h1><h1 id="Join-the-derived-table-to-the-main-query-on-Age.">Join the derived table to the main query on Age.<a class="anchor-link" href="#Join-the-derived-table-to-the-main-query-on-Age.">&#182;</a></h1><p>SELECT a.RecordId, a.Age, a.BloodGlucoseRandom,</p>
+<p>Return MaxGlucose from the derived table.
+Join the derived table to the main query on Age.</p>
+<p>SELECT a.RecordId, a.Age, a.BloodGlucoseRandom,</p>
 
 <pre><code>   b.MaxGlucose
 
@@ -13514,7 +13530,8 @@ SELECT @counter = @counter +1
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Create-a-derived-table-to-return-all-patient-records-with-the-highest-BloodPressure-at-their-Age-level.">Create a derived table to return all patient records with the highest BloodPressure at their Age level.<a class="anchor-link" href="#Create-a-derived-table-to-return-all-patient-records-with-the-highest-BloodPressure-at-their-Age-level.">&#182;</a></h1><p>SELECT *</p>
+<p>Create a derived table to return all patient records with the highest BloodPressure at their Age level.</p>
+<p>SELECT *</p>
 <p>FROM Kidney a</p>
 <p>JOIN (SELECT Age, MAX(BloodPressure) AS MaxBloodPressure FROM Kidney GROUP BY Age) b</p>
 <p>ON a.BloodPressure = b.MaxBloodPressure</p>
@@ -13548,7 +13565,9 @@ SELECT @counter = @counter +1
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Specify-the-keyowrds-to-create-the-CTE">Specify the keyowrds to create the CTE<a class="anchor-link" href="#Specify-the-keyowrds-to-create-the-CTE">&#182;</a></h1><h1 id="Join-the-CTE-on-blood-glucose-equal-to-max-blood-glucose">Join the CTE on blood glucose equal to max blood glucose<a class="anchor-link" href="#Join-the-CTE-on-blood-glucose-equal-to-max-blood-glucose">&#182;</a></h1><p><strong>WITH</strong> BloodGlucoseRandom (MaxGlucose)</p>
+<p>Specify the keyowrds to create the CTE
+Join the CTE on blood glucose equal to max blood glucose</p>
+<p><strong>WITH</strong> BloodGlucoseRandom (MaxGlucose)</p>
 <p><strong>AS</strong> (SELECT MAX(BloodGlucoseRandom) AS MaxGlucose FROM Kidney)</p>
 <p><strong>SELECT</strong> a.Age, b.MaxGlucose</p>
 <p>FROM Kidney a</p>
@@ -13561,7 +13580,9 @@ SELECT @counter = @counter +1
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Create-a-CTE-BloodPressure-that-returns-one-column-(MaxBloodPressure)-which-contains-the-maximum-BloodPressure-in-the-table.">Create a CTE BloodPressure that returns one column (MaxBloodPressure) which contains the maximum BloodPressure in the table.<a class="anchor-link" href="#Create-a-CTE-BloodPressure-that-returns-one-column-(MaxBloodPressure)-which-contains-the-maximum-BloodPressure-in-the-table.">&#182;</a></h1><h1 id="Join-this-CTE-(using-an-alias-b)-to-the-main-table-(Kidney)-to-return-information-about-patients-with-the-maximum-BloodPressure.">Join this CTE (using an alias b) to the main table (Kidney) to return information about patients with the maximum BloodPressure.<a class="anchor-link" href="#Join-this-CTE-(using-an-alias-b)-to-the-main-table-(Kidney)-to-return-information-about-patients-with-the-maximum-BloodPressure.">&#182;</a></h1><p><strong>WITH</strong> BloodPressure (MaxBloodPressure)</p>
+<p>Create a CTE BloodPressure that returns one column (MaxBloodPressure) which contains the maximum BloodPressure in the table.
+Join this CTE (using an alias b) to the main table (Kidney) to return information about patients with the maximum BloodPressure.</p>
+<p><strong>WITH</strong> BloodPressure (MaxBloodPressure)</p>
 <p><strong>AS</strong> (SELECT MAX(BloodPressure) AS MaxBloodPressure FROM Kidney)</p>
 <p><strong>SELECT</strong> *
 FROM Kidney a 
@@ -13583,7 +13604,8 @@ ON a.BloodPressure = b.MaxBloodPressure</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Write-a-T-SQL-query-that-returns-the-sum-of-OrderPrice-by-creating-partitions-for-each-TerritoryName.">Write a T-SQL query that returns the sum of OrderPrice by creating partitions for each TerritoryName.<a class="anchor-link" href="#Write-a-T-SQL-query-that-returns-the-sum-of-OrderPrice-by-creating-partitions-for-each-TerritoryName.">&#182;</a></h1><p>SELECT OrderID, TerritoryName,</p>
+<p>Write a T-SQL query that returns the sum of OrderPrice by creating partitions for each TerritoryName.</p>
+<p>SELECT OrderID, TerritoryName,</p>
 
 <pre><code>   SUM(OrderPrice)
 
@@ -13606,7 +13628,8 @@ ON a.BloodPressure = b.MaxBloodPressure</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Calculate-the-number-of-orders-in-each-territory.">Calculate the number of orders in each territory.<a class="anchor-link" href="#Calculate-the-number-of-orders-in-each-territory.">&#182;</a></h1><p>SELECT OrderID, TerritoryName,</p>
+<p>Calculate the number of orders in each territory.</p>
+<p>SELECT OrderID, TerritoryName,</p>
 
 <pre><code>   COUNT(*)
    OVER(PARTITION BY TerritoryName) AS TotalOrders
@@ -13639,7 +13662,8 @@ Finally, use the FIRST_VALUE() and/or LAST_VALUE() functions as per your require
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Write-a-T-SQL-query-that-returns-the-first-OrderDate-by-creating-partitions-for-each-TerritoryName.">Write a T-SQL query that returns the first OrderDate by creating partitions for each TerritoryName.<a class="anchor-link" href="#Write-a-T-SQL-query-that-returns-the-first-OrderDate-by-creating-partitions-for-each-TerritoryName.">&#182;</a></h1><p>SELECT TerritoryName, OrderDate,</p>
+<p>Write a T-SQL query that returns the first OrderDate by creating partitions for each TerritoryName.</p>
+<p>SELECT TerritoryName, OrderDate,</p>
 
 <pre><code>   FIRST_VALUE(OrderDate) 
 
@@ -13665,7 +13689,10 @@ Finally, use the LEAD() and/or LAG() functions as per your requirement</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Write-a-T-SQL-query-that-for-each-territory:">Write a T-SQL query that for each territory:<a class="anchor-link" href="#Write-a-T-SQL-query-that-for-each-territory:">&#182;</a></h1><h1 id="Shifts-the-values-in-OrderDate-one-row-down.-Call-this-column-PreviousOrder.">Shifts the values in OrderDate one row down. Call this column PreviousOrder.<a class="anchor-link" href="#Shifts-the-values-in-OrderDate-one-row-down.-Call-this-column-PreviousOrder.">&#182;</a></h1><h1 id="Shifts-the-values-in-OrderDate-one-row-up.-Call-this-column-NextOrder.-You-will-need-to-PARTITION-BY-the-territory">Shifts the values in OrderDate one row up. Call this column NextOrder. You will need to PARTITION BY the territory<a class="anchor-link" href="#Shifts-the-values-in-OrderDate-one-row-up.-Call-this-column-NextOrder.-You-will-need-to-PARTITION-BY-the-territory">&#182;</a></h1><p>SELECT TerritoryName, OrderDate,</p>
+<p>Write a T-SQL query that for each territory:
+Shifts the values in OrderDate one row down. Call this column PreviousOrder.
+Shifts the values in OrderDate one row up. Call this column NextOrder. You will need to PARTITION BY the territory</p>
+<p>SELECT TerritoryName, OrderDate,</p>
 
 <pre><code>   LAG(OrderDate) 
    OVER(PARTITION BY TerritoryName ORDER BY OrderDate) AS PreviousOrder,
@@ -13690,7 +13717,8 @@ Finally, use the LEAD() and/or LAG() functions as per your requirement</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Create-the-window,-partition-by-TerritoryName-and-order-by-OrderDate-to-calculate-a-running-total-of-OrderPrice.">Create the window, partition by TerritoryName and order by OrderDate to calculate a running total of OrderPrice.<a class="anchor-link" href="#Create-the-window,-partition-by-TerritoryName-and-order-by-OrderDate-to-calculate-a-running-total-of-OrderPrice.">&#182;</a></h1><p>SELECT TerritoryName, OrderDate,</p>
+<p>Create the window, partition by TerritoryName and order by OrderDate to calculate a running total of OrderPrice.</p>
+<p>SELECT TerritoryName, OrderDate,</p>
 
 <pre><code>   -- Create a running total
    SUM(OrderPrice) 
@@ -13716,7 +13744,8 @@ Finally, use the LEAD() and/or LAG() functions as per your requirement</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Write-a-T-SQL-query-that-assigns-row-numbers-to-all-records-partitioned-by-TerritoryName-and-ordered-by-OrderDate.">Write a T-SQL query that assigns row numbers to all records partitioned by TerritoryName and ordered by OrderDate.<a class="anchor-link" href="#Write-a-T-SQL-query-that-assigns-row-numbers-to-all-records-partitioned-by-TerritoryName-and-ordered-by-OrderDate.">&#182;</a></h1><p>SELECT TerritoryName, OrderDate,</p>
+<p>Write a T-SQL query that assigns row numbers to all records partitioned by TerritoryName and ordered by OrderDate.</p>
+<p>SELECT TerritoryName, OrderDate,</p>
 
 <pre><code>   ROW_NUMBER() 
    OVER(PARTITION BY TerritoryName ORDER BY OrderDate) AS OrderCount
@@ -13739,7 +13768,8 @@ Finally, use the LEAD() and/or LAG() functions as per your requirement</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Create-the-window,-partition-by-TerritoryName-and-order-by-OrderDate-to-calculate-a-running-standard-deviation-of-OrderPrice.">Create the window, partition by TerritoryName and order by OrderDate to calculate a running standard deviation of OrderPrice.<a class="anchor-link" href="#Create-the-window,-partition-by-TerritoryName-and-order-by-OrderDate-to-calculate-a-running-standard-deviation-of-OrderPrice.">&#182;</a></h1><p>SELECT OrderDate, TerritoryName,</p>
+<p>Create the window, partition by TerritoryName and order by OrderDate to calculate a running standard deviation of OrderPrice.</p>
+<p>SELECT OrderDate, TerritoryName,</p>
 
 <pre><code>   STDEV(OrderPrice)
    OVER(PARTITION BY TerritoryName ORDER BY OrderDate) AS StdDevPrice
@@ -13763,7 +13793,9 @@ Finally, use the LEAD() and/or LAG() functions as per your requirement</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Create-a-CTE-ModePrice-that-returns-two-columns-(OrderPrice-and-UnitPriceFrequency).">Create a CTE ModePrice that returns two columns (OrderPrice and UnitPriceFrequency).<a class="anchor-link" href="#Create-a-CTE-ModePrice-that-returns-two-columns-(OrderPrice-and-UnitPriceFrequency).">&#182;</a></h1><h1 id="Write-a-query-that-returns-all-rows-in-this-CTE.">Write a query that returns all rows in this CTE.<a class="anchor-link" href="#Write-a-query-that-returns-all-rows-in-this-CTE.">&#182;</a></h1><p>WITH ModePrice (OrderPrice, UnitPriceFrequency)
+<p>Create a CTE ModePrice that returns two columns (OrderPrice and UnitPriceFrequency).
+Write a query that returns all rows in this CTE.</p>
+<p>WITH ModePrice (OrderPrice, UnitPriceFrequency)
 AS</p>
 
 <pre><code>(
@@ -13792,7 +13824,8 @@ FROM Orders
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Use-the-CTE-ModePrice-to-return-the-value-of-OrderPrice-with-the-highest-row-number.">Use the CTE ModePrice to return the value of OrderPrice with the highest row number.<a class="anchor-link" href="#Use-the-CTE-ModePrice-to-return-the-value-of-OrderPrice-with-the-highest-row-number.">&#182;</a></h1><p>WITH ModePrice (OrderPrice, UnitPriceFrequency)
+<p>Use the CTE ModePrice to return the value of OrderPrice with the highest row number.</p>
+<p>WITH ModePrice (OrderPrice, UnitPriceFrequency)
 AS</p>
 
 <pre><code>(
@@ -13803,7 +13836,8 @@ FROM Orders
 )
 
 </code></pre>
-<h1 id="Select-the-order-price-from-the-CTE">Select the order price from the CTE<a class="anchor-link" href="#Select-the-order-price-from-the-CTE">&#182;</a></h1><p>SELECT OrderPrice AS ModeOrderPrice
+<p>Select the order price from the CTE</p>
+<p>SELECT OrderPrice AS ModeOrderPrice
 FROM ModePrice
 WHERE UnitPriceFrequency IN (SELECT MAX(UnitPriceFrequency) From ModePrice)</p>
 
