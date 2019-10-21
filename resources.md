@@ -17,3 +17,4 @@ permalink: /resources/
 **DataScience**
 
 [Simple XGBoost model + serializing the model with Pickle](/projects/XGBoost-ex.html)
+[Introductory to Deep Learning - Examples and Foundations](/resources/Introduction_to_Deep_Learning.html)
