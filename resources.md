@@ -16,4 +16,4 @@ permalink: /resources/
 
 **DataScience**
 
-* [Simple XGBoost model + serializing the model with Pickle](/projects/XGBoost-ex.html)
+[Simple XGBoost model + serializing the model with Pickle](/projects/XGBoost-ex.html)
