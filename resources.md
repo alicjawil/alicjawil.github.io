@@ -13,3 +13,7 @@ permalink: /resources/
 **Python**
 
 [Foundations of Object Oriented Programming in Python](/resources/Intro_to_Object_Oriented_Programming.html)
+
+**DataScience**
+
+* [Simple XGBoost model + serializing the model with Pickle](/projects/XGBoost-ex.html)
