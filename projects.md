@@ -6,8 +6,8 @@ permalink: /projects/
 
 ### Projects
 
-
-* [Recipie Recommender System](/projects/recommender_system.html)
+* [Count Vectorizer and TF*IDF algorithms on Wine Dataset](/projects/wine_reviews_text_analysis.html)
+* [Recipie Recommender System - Predictive Modeling and Comprehensive Text Analysis](/projects/recommender_system.html)
 * [Indeed Resume Web Scraping](/projects/indeed_resume_scrape.html)
 * [Markov Chains and NLP on Reddit Subreddits](/projects/reddit_markov_chain.html)
 * Spotify Project
