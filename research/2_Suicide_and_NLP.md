@@ -34,10 +34,10 @@ Evaluation results of both approaches:
 
 
 
-<img src="table1.png" width="1400" height="600" align="center"/>
+<img src="table1.png" align="center"/>
 
 
-<img src="table2.png" width="1200" height="600" align="center"/>
+<img src="table2.png" align="center"/>
 
 This is an extremely valuable research that help with detecting suicidal notes using CRIS (The Clinical Record Interactive Search). There are over 1 million records in the database. The NLP models were able to extract significant data with high precision, recall and F1 scores. 
 
