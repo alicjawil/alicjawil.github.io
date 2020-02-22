@@ -21,7 +21,6 @@ I earned my STEM degree at University of California, Irvine. The degree combines
 I inspire to be the bridge between data science and stakeholders. I use data to drive business value and communicate insights in an intuitive way. Some of the biggest challenges for data-oriented organizations are effecitve communication and visual interpretation of insights. My passion lies in behavioral data science , people analytics and creating spiritual business leaders.
 
 In my free time I practice meditation and yoga, read personal development books and play beach volleyball.
-Namaste.
 
 
 ## Contact me
