@@ -18,7 +18,7 @@ After working for one year in the SaaS industry, I decided to deepen my analytic
 
 I earned my STEM degree at University of California, Irvine. The degree combines Machine Learning and Business Operations and teaches hands on programming skills. (SQL, Python, R, Alteryx).
 
-I inspire to be the bridge between data science and end stakeholders. One of the biggest challenges for data-oriented organizations is effecitve communication and visual interpretation of insights. My passion lies in behavioral data science , people analytics and creating spiritual business leaders.
+I inspire to be the bridge between data science and stakeholders. I use data to drive business value and communicate insights in an intuitive way. Some of the biggest challenges for data-oriented organizations are effecitve communication and visual interpretation of insights. My passion lies in behavioral data science , people analytics and creating spiritual business leaders.
 
 In my free time I practice meditation and yoga, read personal development books and play beach volleyball.
 Namaste.
